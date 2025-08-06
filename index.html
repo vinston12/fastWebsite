@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iwona Markowicz - Aktywizacja zawodowa osób niepełnosprawnych | Doradztwo zawodowe | Pisanie wniosków o dotacje</title>
+    <meta name="description" content="Profesjonalne wsparcie w aktywizacji zawodowej osób niepełnosprawnych, pisanie wniosków o dofinansowanie, doradztwo zawodowe i konsultacje indywidualne. Iwona Markowicz - ekspert w integracji zawodowej.">
+    <meta name="keywords" content="aktywizacja zawodowa osób niepełnosprawnych, wsparcie dla osób z niepełnosprawnością na rynku pracy, integracja zawodowa osób niepełnosprawnych, doradztwo zawodowe dla niepełnosprawnych, praca dla osób z orzeczeniem o niepełnosprawności, szkolenia dla osób niepełnosprawnych, programy aktywizacyjne dla osób z niepełnosprawnością, pisanie wniosków o dotacje, pozyskiwanie funduszy dla firm, konsulting w zakresie dotacji, dotacje na założenie firmy, wnioski PFRON, fundusze europejskie dla osób niepełnosprawnych, coaching kariery, coaching dla przedsiębiorców, coaching indywidualny, rozwój osobisty, coaching biznesowy, mentoring zawodowy">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-orange: #FF6B35;
+            --secondary-orange: #FFD700;
+            --dark-gray: #4A4A4A;
+            --medium-gray: #6B6B6B;
+            --light-gray: #F8F9FA;
+            --text-dark: #2C3E50;
+            --text-light: #7F8C8D;
+            --white: #FFFFFF;
+            --border-color: #E9ECEF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .main-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: var(--primary-orange);
+        }
+
+        .logo-image {
+            width: 120px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-orange);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .btn-contact {
+            background: var(--primary-orange);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-contact:hover {
+            background: var(--secondary-orange);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--dark-gray);
+        }
+
+        .hero-content h1 .highlight {
+            color: var(--primary-orange);
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn-primary {
+            background: var(--primary-orange);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-orange);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-orange);
+            padding: 15px 30px;
+            border: 2px solid var(--primary-orange);
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-orange);
+            color: white;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-orange);
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.2);
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--dark-gray);
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            font-size: 18px;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 24px;
+        }
+
+        .service-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--dark-gray);
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Expanding Table Section */
+        .table-section {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .expanding-table {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .table-row {
+            border-bottom: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .table-row:last-child {
+            border-bottom: none;
+        }
+
+        .table-header {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            transition: background-color 0.3s ease;
+        }
+
+        .table-header:hover {
+            background: var(--light-gray);
+        }
+
+        .table-header h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--dark-gray);
+        }
+
+        .table-arrow {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .table-row.active .table-arrow {
+            transform: rotate(180deg);
+        }
+
+        .table-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: var(--light-gray);
+        }
+
+        .table-row.active .table-content {
+            max-height: 500px;
+        }
+
+        .table-content-inner {
+            padding: 30px;
+        }
+
+        .table-content-inner h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--dark-gray);
+            margin-bottom: 15px;
+        }
+
+        .table-content-inner p {
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .keywords-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .keyword-tag {
+            background: var(--primary-orange);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .contact-container {
+            text-align: center;
+        }
+
+        .contact-container h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--dark-gray);
+            margin-bottom: 20px;
+        }
+
+        .contact-container p {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-item h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--dark-gray);
+            margin-bottom: 10px;
+        }
+
+        .contact-item p {
+            color: var(--text-light);
+        }
+
+        /* Newsletter Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto;
+            background: linear-gradient(135deg, var(--white) 0%, #f8f9fa 100%);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 2px solid var(--primary-orange);
+        }
+
+        .newsletter-header h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, var(--dark-gray), var(--primary-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .highlight-text {
+            background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange), #ff8c42);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 800;
+        }
+
+        .time-limited-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #ff4757, #ff3742);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            margin: 15px auto;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        .badge-icon {
+            font-size: 16px;
+        }
+
+        .badge-text {
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 6px 20px rgba(255, 71, 87, 0.4);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+            }
+        }
+
+        .newsletter-subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: var(--text-light);
+            margin-bottom: 25px;
+        }
+
+        .newsletter-benefits {
+            margin-bottom: 25px;
+        }
+
+        .benefit-item {
+            padding: 8px 0;
+            font-size: 14px;
+            color: var(--dark-gray);
+            font-weight: 500;
+        }
+
+        .urgency-notice {
+            background: linear-gradient(135deg, #ff6b35, #ff8c42);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark-gray);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-orange);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            background: var(--primary-orange);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background: var(--secondary-orange);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-gray);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-header {
+                padding: 10px 0;
+            }
+
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+                padding: 10px 0;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .logo-image {
+                width: 80px;
+                height: 40px;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .header-actions {
+                justify-content: center;
+            }
+
+            .btn-contact {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .hero-section {
+                padding: 180px 0 80px;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 28px;
+            }
+
+            .section-header h2 {
+                font-size: 28px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .hero-section {
+                padding: 200px 0 60px;
+            }
+
+            .contact-form {
+                padding: 20px;
+                margin: 20px auto;
+            }
+
+            .newsletter-header h3 {
+                font-size: 24px;
+            }
+
+            .time-limited-badge {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+
+            .urgency-notice {
+                font-size: 12px;
+                padding: 12px;
+            }
+
+            .form-submit {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="images/logiii-removebg-preview.png" alt="Logo Iwona Markowicz" class="logo-image" onerror="this.style.display='none'">
+                    <span>Iwona Markowicz</span>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#services">Usługi</a></li>
+                        <li><a href="#about">O mnie</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="#contact" class="btn-contact">Skontaktuj się</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Profesjonalne <span class="highlight">wsparcie</span> w aktywizacji zawodowej osób niepełnosprawnych</h1>
+                    <p>Specjalizuję się w kompleksowym wsparciu osób z niepełnosprawnościami na rynku pracy, pisaniu wniosków o dofinansowanie oraz indywidualnym doradztwie zawodowym. Pomagam w integracji zawodowej i rozwoju kariery.</p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn-primary">Poznaj moje usługi</a>
+                        <a href="#contact" class="btn-secondary">Umów konsultację</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/300x300/FF6B35/FFFFFF?text=IM" alt="Iwona Markowicz" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Zakres moich działań</h2>
+                <p>Kompleksowe wsparcie w aktywizacji zawodowej, pozyskiwaniu funduszy i rozwoju kariery</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Aktywizacja osób z niepełnosprawnościami</h3>
+                    <p>Profesjonalne wsparcie w integracji zawodowej osób niepełnosprawnych, pośrednictwo pracy i programy aktywizacyjne. Pomagam w znalezieniu odpowiedniej ścieżki zawodowej.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📝</div>
+                    <h3>Pisanie wniosków o dofinansowanie</h3>
+                    <p>Specjalizuję się w pisaniu wniosków o dotacje, pozyskiwaniu funduszy europejskich i wniosków PFRON. Profesjonalne wsparcie w pozyskiwaniu środków finansowych.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Konsultacje indywidualne</h3>
+                    <p>Indywidualne doradztwo zawodowe, coaching kariery i mentoring dla osób niepełnosprawnych. Wsparcie w rozwoju osobistym i zawodowym.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Inne usługi specjalistyczne</h3>
+                    <p>Dodatkowe usługi w zakresie rozwoju biznesu, szkoleń dla osób niepełnosprawnych i wsparcia w zakładaniu własnej działalności gospodarczej.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expanding Table Section -->
+    <section id="about" class="table-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Szczegółowy zakres usług</h2>
+                <p>Kliknij na każdą sekcję, aby poznać szczegóły moich działań</p>
+            </div>
+            <div class="expanding-table">
+                <div class="table-row">
+                    <div class="table-header">
+                        <h3>Aktywizacja zawodowa osób niepełnosprawnych</h3>
+                        <div class="table-arrow">▼</div>
+                    </div>
+                    <div class="table-content">
+                        <div class="table-content-inner">
+                            <h4>Kompleksowe wsparcie w integracji zawodowej</h4>
+                            <p>Specjalizuję się w aktywizacji zawodowej osób z niepełnosprawnościami, oferując kompleksowe wsparcie w znalezieniu odpowiedniej pracy. Moje usługi obejmują:</p>
+                            <ul>
+                                <li>Doradztwo zawodowe dla osób niepełnosprawnych</li>
+                                <li>Pośrednictwo pracy dla osób z orzeczeniem o niepełnosprawności</li>
+                                <li>Programy aktywizacyjne dla osób z niepełnosprawnością</li>
+                                <li>Szkolenia dla osób niepełnosprawnych</li>
+                                <li>Wsparcie w karierze dla niepełnosprawnych</li>
+                            </ul>
+                            <div class="keywords-list">
+                                <span class="keyword-tag">aktywizacja zawodowa osób niepełnosprawnych</span>
+                                <span class="keyword-tag">wsparcie dla osób z niepełnosprawnością na rynku pracy</span>
+                                <span class="keyword-tag">integracja zawodowa osób niepełnosprawnych</span>
+                                <span class="keyword-tag">doradztwo zawodowe dla niepełnosprawnych</span>
+                                <span class="keyword-tag">praca dla osób z orzeczeniem o niepełnosprawności</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-header">
+                        <h3>Pisanie wniosków o dofinansowanie</h3>
+                        <div class="table-arrow">▼</div>
+                    </div>
+                    <div class="table-content">
+                        <div class="table-content-inner">
+                            <h4>Profesjonalne pozyskiwanie funduszy</h4>
+                            <p>Oferuję kompleksowe usługi w zakresie pisania wniosków o dotacje i pozyskiwania funduszy:</p>
+                            <ul>
+                                <li>Pisanie wniosków o dofinansowanie</li>
+                                <li>Pozyskiwanie funduszy dla firm</li>
+                                <li>Konsulting w zakresie dotacji</li>
+                                <li>Dotacje na założenie firmy</li>
+                                <li>Wnioski PFRON</li>
+                                <li>Fundusze europejskie dla osób niepełnosprawnych</li>
+                            </ul>
+                            <div class="keywords-list">
+                                <span class="keyword-tag">pisanie wniosków o dotacje</span>
+                                <span class="keyword-tag">pozyskiwanie funduszy dla firm</span>
+                                <span class="keyword-tag">konsulting w zakresie dotacji</span>
+                                <span class="keyword-tag">wnioski PFRON</span>
+                                <span class="keyword-tag">fundusze europejskie</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-header">
+                        <h3>Konsultacje indywidualne</h3>
+                        <div class="table-arrow">▼</div>
+                    </div>
+                    <div class="table-content">
+                        <div class="table-content-inner">
+                            <h4>Indywidualne wsparcie w rozwoju kariery</h4>
+                            <p>Oferuję profesjonalne konsultacje indywidualne w zakresie rozwoju zawodowego:</p>
+                            <ul>
+                                <li>Coaching kariery</li>
+                                <li>Coaching dla przedsiębiorców</li>
+                                <li>Coaching indywidualny</li>
+                                <li>Rozwój osobisty</li>
+                                <li>Coaching biznesowy</li>
+                                <li>Mentoring zawodowy</li>
+                                <li>Wsparcie w zmianie kariery</li>
+                            </ul>
+                            <div class="keywords-list">
+                                <span class="keyword-tag">coaching kariery</span>
+                                <span class="keyword-tag">coaching dla przedsiębiorców</span>
+                                <span class="keyword-tag">coaching indywidualny</span>
+                                <span class="keyword-tag">rozwój osobisty</span>
+                                <span class="keyword-tag">mentoring zawodowy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-header">
+                        <h3>Inne usługi specjalistyczne</h3>
+                        <div class="table-arrow">▼</div>
+                    </div>
+                    <div class="table-content">
+                        <div class="table-content-inner">
+                            <h4>Dodatkowe usługi wspierające rozwój</h4>
+                            <p>Oferuję również szereg dodatkowych usług specjalistycznych:</p>
+                            <ul>
+                                <li>Szkolenia dla osób niepełnosprawnych</li>
+                                <li>Programy aktywizacyjne dla osób z niepełnosprawnością</li>
+                                <li>Wsparcie w zakładaniu własnej działalności</li>
+                                <li>Doradztwo w zakresie dostępności</li>
+                                <li>Współpraca z pracodawcami</li>
+                                <li>Monitoring i ewaluacja programów</li>
+                            </ul>
+                            <div class="keywords-list">
+                                <span class="keyword-tag">szkolenia dla osób niepełnosprawnych</span>
+                                <span class="keyword-tag">programy aktywizacyjne</span>
+                                <span class="keyword-tag">wsparcie w zakładaniu firmy</span>
+                                <span class="keyword-tag">doradztwo dostępności</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <h2>Skontaktuj się ze mną</h2>
+                <p>Jestem gotowa pomóc Ci w rozwoju zawodowym i pozyskaniu funduszy</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p>iwona.markowicz@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Telefon</h4>
+                        <p>+48 123 456 789</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Obszar działania</h4>
+                        <p>Cała Polska</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <div class="newsletter-header">
+                        <h3><span class="highlight-text">Newsletter</span></h3>
+                        <div class="time-limited-badge">
+                            <span class="badge-icon">⏰</span>
+                            <span class="badge-text">Oferta ograniczona czasowo</span>
+                        </div>
+                        <p class="newsletter-subtitle">Zapisz się do mojego newslettera i otrzymuj odemnie treści całkowicie za darmo!</p>
+                        
+                    </div>
+                    <form action="#" method="POST" id="newsletter-form">
+                        <div class="form-group">
+                            <label for="email">Twój email:</label>
+                            <input type="email" id="email" name="email" placeholder="twoj@email.pl" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label style="display: flex; align-items: center; gap: 8px; font-weight: 400;">
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">ZAPISZ SIĘ TERAZ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Iwona Markowicz. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Expanding table functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tableHeaders = document.querySelectorAll('.table-header');
+            
+            tableHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const row = this.parentElement;
+                    const isActive = row.classList.contains('active');
+                    
+                    // Close all other rows
+                    document.querySelectorAll('.table-row').forEach(row => {
+                        row.classList.remove('active');
+                    });
+                    
+                    // Toggle current row
+                    if (!isActive) {
+                        row.classList.add('active');
+                    }
+                });
+            });
+
+            // Newsletter form handling
+            const newsletterForm = document.getElementById('newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Basic form validation
+                    const email = document.getElementById('email').value;
+                    const newsletter = document.querySelector('input[name="newsletter"]').checked;
+                    
+                    if (!email || !newsletter) {
+                        alert('Proszę podać email i wyrazić zgodę na newsletter.');
+                        return;
+                    }
+                    
+                    // Here you can add AJAX submission for WordPress
+                    // For now, we'll just show a success message
+                    alert('🎉 Dziękuję! Zostałeś zapisany do newslettera. Otrzymasz ekskluzywne oferty!');
+                    newsletterForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
